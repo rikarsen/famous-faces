@@ -1,0 +1,21 @@
+<!--
+  Generated template for the AdminEditPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Edit Famous Face</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="famousFaceForm">
+    <ion-item>
+      <ion-label floating>Famous Face Name</ion-label>
+      <ion-input type="text" formControlName="name"></ion-input>
+    </ion-item>
+    <button ion-button round color="primary" block [disabled]="!famousFaceForm.valid" (click)="update()">Update</button>
+  </form>
+</ion-content>

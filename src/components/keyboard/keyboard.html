@@ -1,0 +1,18 @@
+<div class="keys result">
+  <div class="row">
+    <div class="key"
+         *ngFor="let key of resultKeys; let i = index"
+         [ngClass]="{'selected': selectedResultKey === i}"
+         (click)="selectResultKey(i)"><span>{{ key.latter }}</span></div>
+  </div>
+</div>
+<div class="keys keyboard">
+  <div class="row"
+       *ngFor="let row of rows">
+    <div class="key"
+         *ngFor="let key of keys | keyboardRowFilter: {row: row}"
+         (click)="onKeyPress(key)">
+      <span>{{ key.latter }}</span>
+    </div>
+  </div>
+</div>

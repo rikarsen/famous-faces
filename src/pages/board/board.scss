@@ -1,0 +1,22 @@
+page-board {
+  .board-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .board-image {
+      flex: 1;
+
+      .img {
+        width: 100%;
+        height: 100%;
+        background: #4b6584 url(http://www.traineerh.com.br/wp-content/uploads/2018/07/size_960_16_9_eisensteintit-thegem-blog-timeline-large.jpg) no-repeat center center;
+        background-size: contain;
+      }
+
+      img {
+        filter: grayscale(100%);
+      }
+    }
+  }
+}
