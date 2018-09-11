@@ -1,0 +1,8 @@
+{
+  "name": "famous-faces",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "ff1c025f"
+}
