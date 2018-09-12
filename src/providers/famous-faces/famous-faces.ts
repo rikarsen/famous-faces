@@ -8,7 +8,7 @@ import 'rxjs/add/observable/of';
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'}),
 };
-const apiUrl = "http://localhost:3000/famous-faces";
+const apiUrl = "http://192.168.40.183:3000/famous-faces";
 
 /*
   Generated class for the FamousFacesProvider provider.
