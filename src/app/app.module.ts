@@ -15,6 +15,8 @@ import { FamousFacesProvider } from '../providers/famous-faces/famous-faces';
 import { AdminDetailPage } from '../pages/admin-detail/admin-detail';
 import { AdminEditPage } from '../pages/admin-edit/admin-edit';
 import { AdminCreatePage } from '../pages/admin-create/admin-create';
+import { ImagePicker } from '@ionic-native/image-picker';
+import { Base64 } from '@ionic-native/base64';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,10 @@ import { AdminCreatePage } from '../pages/admin-create/admin-create';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ImagePicker,
+    Base64,
     FamousFacesProvider,
+
   ],
 })
 export class AppModule {

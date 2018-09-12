@@ -15,6 +15,12 @@
       <ion-label floating>Name</ion-label>
       <ion-input type="text" formControlName="name"></ion-input>
     </ion-item>
+    <ion-item>
+      <ion-label fixed>Avatar</ion-label>
+      <ion-avatar item-end>
+        <img [src]="imgPreview" (click)="getPhoto()">
+      </ion-avatar>
+    </ion-item>
     <button ion-button round color="primary" block [disabled]="!famousFaceForm.valid"
             (click)="create()">Create
     </button>
